@@ -1,0 +1,7 @@
+/data
+/.idea
+/.vscode
+/.vagrant
+*.pyc
+.DS_Store
+XDG_CACHE_HOME

@@ -1,0 +1,3 @@
+[submodule "mdcas-python"]
+	path = mdcas-python
+	url = https://bitbucket.org/mhealthresearchgroup/mdcas-python.git

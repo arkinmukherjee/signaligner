@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="mturk_instructions.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div style="text-align:left; font-size: 30px">
+
+    <div>
+        <div style="text-align:center">
+
+            <button class="slideshow_btn" onclick="changeSlide(-1); clickSlideshowButton();">&#10094;</button>
+
+            <img class="slideshow_img" src="ex_ambulation_z4_99_50min_rwrist.png">
+            <img class="slideshow_img" src="ex_ambulation_z2_69_2min_rwrist.png">
+
+            <img class="slideshow_img" src="ex_sittingstill_z4_99_50min_rwrist.png">
+            <img class="slideshow_img" src="ex_sittingstill_z2_69_2min_rwrist.png">
+
+
+            <button class="slideshow_btn" onclick="changeSlide(+1); clickSlideshowButton();">&#10095;</button>
+
+        </div>
+
+        <div style="text-align:center;">
+
+            <p class="slideshow_caption">Walking: 50 minutes</p>
+            <p class="slideshow_caption">Walking: 2 minutes</p>
+
+            <p class="slideshow_caption">Sitting: 50 minutes</p>
+            <p class="slideshow_caption">Sitting: 2 minutes </p>
+
+        </div>
+
+        <div style="text-align:center;">
+
+            <p class="slideshow_subcaption">Wrist moves in a periodic way at walking pace.</p>
+            <p class="slideshow_subcaption">Wrist moves in a periodic way at walking pace.</p>
+
+            <p class="slideshow_subcaption">Wrist movements not as intense or periodic as when walking.</p>
+            <p class="slideshow_subcaption">Wrist movements not as intense or periodic as when walking.</p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+
+<script>
+    var slideIdx = 0;
+    var images = document.getElementsByClassName('slideshow_img');
+    var caption_labels = document.getElementsByClassName('slideshow_caption');
+    var subcaption_labels = document.getElementsByClassName('slideshow_subcaption');
+    images[0].setAttribute("style","display:inline-block");
+    caption_labels[0].setAttribute("style", "display:inline-block");
+    subcaption_labels[0].setAttribute("style", "display:inline-block");
+</script>
+
+<script src="mturk_instructions.js"></script>
+
+
+</html>

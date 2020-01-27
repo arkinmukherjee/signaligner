@@ -1,0 +1,17 @@
+{
+    "title": "TEST: sin30min",
+    "tile_size": 1024,
+    "tile_subsample": 4,
+    "zoom_max": 3,
+    "length": 144000,
+    "start_time_ms": 946719005500,
+    "sample_rate": 80,
+    "start_day_idx": 1,
+    "magnitude": 2,
+    "signals": ["sin30min"],
+    "labels": [
+        { "label": "One", "color": [ 0.15, 0.45, 0.45 ] },
+        { "label": "Two", "color": [ 0.45, 0.45, 0.15 ] },
+        { "label": "Three", "color": [ 0.45, 0.15, 0.30 ] }
+    ]
+}

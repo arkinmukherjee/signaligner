@@ -1,0 +1,4 @@
+label,red,green,blue
+Wear,    0.00, 0.90, 0.30
+Nonwear, 0.00, 0.50, 0.50
+Sleep,   0.00, 0.00, 0.80

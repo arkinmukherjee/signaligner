@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="mturk_instructions.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div>
+    <h1><i>Signaligner</i></h1>
+</div>
+
+<div style="text-align:left">
+
+    <b>Step 2: Take a Look at Some Examples</b> <br><br>
+
+    Here are some example signals collected when people do different activities. There will be variation in how
+    individuals move, but these give you an idea of the general structure of the signal to expect.
+
+    <div style="margin-top:10px;">
+
+        <div style="text-align:center">
+
+            <button class="slideshow_btn" onclick="changeSlide(-1)">&#10094;</button>
+
+            <img class="slideshow_img" src="ex_ambulation_z5_M_06_48_10_to_07_39_22_pm.png" alt="ambulation zoom 5">
+            <img class="slideshow_img" src="ex_ambulation_z3_M_06_48_18_to_06_51_31_pm.png" alt="ambulation zoom 3">
+            <img class="slideshow_img" src="ex_ambulation_z0_M_06_48_18_to_06_48_22_pm.png" alt="ambulation zoom 0">
+
+            <img class="slideshow_img" src="ex_sedentary_z5_M_07_11_00_to_08_02_12_pm.png" alt="sedentary zoom 5">
+            <img class="slideshow_img" src="ex_sedentary_z3_M_07_11_03_to_07_14_15_pm.png" alt="sedentary zoom 3">
+            <img class="slideshow_img" src="ex_sedentary_z0_M_07_11_03_to_07_11_06_pm.png" alt="sedentary zoom 0">
+
+            <img class="slideshow_img" src="ex_wear_z5_T_07_03_19_to_07_54_31am.png" alt="wear zoom 5">
+            <img class="slideshow_img" src="ex_wear_z3_T_07_03_20_to_07_06_32_am.png" alt="wear zoom 3">
+            <img class="slideshow_img" src="ex_wear_z0_T_07_03_20_to_07_03_23_am.png" alt="wear zoom 0">
+
+            <img class="slideshow_img" src="ex_nonwear_z5_W_06_14_15_to_07_05_27_am.png" alt="nonwear zoom 5">
+            <img class="slideshow_img" src="ex_nonwear_z3_W_06_14_18_to_06_17_30_am.png" alt="nonwear zoom 3">
+            <img class="slideshow_img" src="ex_nonwear_z0_W_06_14_18_to_06_14_21_am.png" alt="nonwear zoom 0">
+
+            <img class="slideshow_img" src="ex_sleep_z5_W_02_39_51_to_03_31_03_am.png" alt="sleep zoom 5">
+            <img class="slideshow_img" src="ex_sleep_z3_W_02_39_55_to_02_43_07_am.png" alt="sleep zoom 3">
+            <img class="slideshow_img" src="ex_sleep_z0_W_02_39_55_to_02_39_58_am.png" alt="sleep zoom 0">
+
+            <button class="slideshow_btn" onclick="changeSlide(+1)">&#10095;</button>
+
+        </div>
+
+        <p class="slideshow_caption slideshow_caption_label">Ambulation</p>
+        <p class="slideshow_caption slideshow_caption_label">Sedentary</p>
+        <p class="slideshow_caption slideshow_caption_label">Wear</p>
+        <p class="slideshow_caption slideshow_caption_label">Nonwear</p>
+        <p class="slideshow_caption slideshow_caption_label">Sleep</p>
+
+        <div style="text-align:center">
+
+            <p class="slideshow_caption slideshow_caption_zoom">Zoomed Out (51m)</p>
+            <p class="slideshow_caption slideshow_caption_zoom">Zoomed In (3m)</p>
+            <p class="slideshow_caption slideshow_caption_zoom">Max Zoomed In (3ms)</p>
+
+            <!-- Ambulation -->
+            <p class="slideshow_caption slideshow_caption_time">06:48:10pm - 07:39:22pm</p>
+            <p class="slideshow_caption slideshow_caption_time">06:48:18pm - 06:51:31pm</p>
+            <p class="slideshow_caption slideshow_caption_time">06:48:18pm - 06:48:22pm</p>
+
+            <!-- Sedentary -->
+            <p class="slideshow_caption slideshow_caption_time">07:11:00pm - 08:02:12pm</p>
+            <p class="slideshow_caption slideshow_caption_time">07:11:03pm - 07:14:15pm</p>
+            <p class="slideshow_caption slideshow_caption_time">07:11:03pm - 07:11:06pm</p>
+
+
+            <!-- Wear -->
+            <p class="slideshow_caption slideshow_caption_time">07:03:19am - 07:54:31am</p>
+            <p class="slideshow_caption slideshow_caption_time">07:03:20am - 07:06:32am</p>
+            <p class="slideshow_caption slideshow_caption_time">07:03:20am to 07:03:23am</p>
+
+
+            <!-- Nonwear -->
+            <p class="slideshow_caption slideshow_caption_time">06:14:15am - 07:05:27am</p>
+            <p class="slideshow_caption slideshow_caption_time">06:14:18am - 06:17:30am</p>
+            <p class="slideshow_caption slideshow_caption_time">06:14:18am - 06:14:21am</p>
+
+            <!-- Sleep -->
+            <p class="slideshow_caption slideshow_caption_time">02:39:51am - 03:31:03am</p>
+            <p class="slideshow_caption slideshow_caption_time">02:39:55am - 02:43:07am</p>
+            <p class="slideshow_caption slideshow_caption_time">02:39:55am - 02:39:58am</p>
+
+        </div>
+
+    </div>
+
+    <div class="nav_btn">
+        <a href='#' class="nav_left" onclick="clickPrev('mturk_instructions_algo_step_2.html', 'mturk_instructions_algo_step_1.html')">&#8592; Previous</a>
+        <a href='#' class="nav_right" onclick="clickNext('mturk_instructions_algo_step_2.html', 'mturk_instructions_algo_step_3.html')">Next &#8594;</a>
+    </div>
+
+</div>
+
+</body>
+
+<script>
+    var slideIdx = 0;
+    var images = document.getElementsByClassName('slideshow_img');
+    var caption_labels = document.getElementsByClassName('slideshow_caption_label');
+    var caption_zooms = document.getElementsByClassName('slideshow_caption_zoom');
+    var caption_times = document.getElementsByClassName('slideshow_caption_time');
+    images[0].setAttribute("style","display:inline-block");
+    caption_labels[0].setAttribute("style", "display:block");
+    caption_zooms[0].setAttribute("style","display:inline-block");
+    caption_times[0].setAttribute("style","display:inline-block");
+</script>
+<script src="mturk_instructions.js"></script>
+
+</html>

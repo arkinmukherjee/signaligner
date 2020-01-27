@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+numpy = "*"
+pandas = "*"
+padar-parallel = "*"
+padar-converter = ">=0.2.19"
+padar-features = "*"
+scikit-learn = "*"
+clize = "*"
+
+[requires]
+python_version = "3.6"
